@@ -1,7 +1,7 @@
 import React, { useState, useReducer } from 'react';
 import reducer, { initialState} from './../reducers';
 
-import { toggleEdit, setTitleText } from './../actions';
+import { toggleEdit, setTitleText, saveInput } from './../actions';
 
 const Title = () => {
   // const [title, setTitle] = useState('Hello earthlings!');
@@ -22,7 +22,7 @@ const Title = () => {
   const handleFormInput = ()=> {
     // setTitle(newTitleText);
     // setEditing(false);
-    // dispatch();
+    dispatch(saveInput());
   }
 
   console.log(state.newTitleText);
