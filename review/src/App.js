@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 import reducer, { initialState} from './reducers/calcReducer';
 import "./styles.css";
 
-import { addAction, subtractAction, clearAction, addToMemoryAction} from './actions/calcAction';
+import { addAction, subtractAction, clearAction, addToMemoryAction } from './actions/calcAction';
 let currentState = initialState;
 
 
