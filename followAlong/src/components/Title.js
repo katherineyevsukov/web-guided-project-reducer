@@ -1,6 +1,8 @@
 import React, { useState, useReducer } from 'react';
 import reducer, { initialState} from './../reducers';
 
+import { toggleEdit } from './../actions';
+
 const Title = () => {
   // const [title, setTitle] = useState('Hello earthlings!');
   // const [editing, setEditing] = useState(false);
@@ -13,7 +15,7 @@ const Title = () => {
 
   const handleEditing = ()=> {
     // setEditing(!editing)
-    dispatch({type: "TOGGLE_EDIT"});
+    dispatch(toggleEdit());
   }
 
   const handleFormInput = ()=> {
