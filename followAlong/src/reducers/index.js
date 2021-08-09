@@ -12,6 +12,11 @@ const reducer = (state, action) => {
     } else if (action.type === SET_TITLE_TEXT) {
         return({ ...state, newTitleText: action.payload });
     } else if (action.type === SAVE_INPUT) {
+        return({
+            ...state,
+            editing:false,
+            title: state.newTitleText
+        });
     }
 
     return state;
