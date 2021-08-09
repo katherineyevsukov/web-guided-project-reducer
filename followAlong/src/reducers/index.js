@@ -1,4 +1,4 @@
-import { TOGGLE_EDIT, SET_TITLE_TEXT} from './../actions';
+import { TOGGLE_EDIT, SET_TITLE_TEXT, SAVE_INPUT} from './../actions';
 
 export const initialState = {
     title: 'Hello earthlings!',
@@ -11,6 +11,7 @@ const reducer = (state, action) => {
         return({ ...state, editing: !state.editing });
     } else if (action.type === SET_TITLE_TEXT) {
         return({ ...state, newTitleText: action.payload });
+    } else if (action.type === SAVE_INPUT) {
     }
 
     return state;
