@@ -8,6 +8,7 @@ const reducer = (state, action) => {
     if(action.type === "TOGGLE_EDIT") {
         return({ ...state, editing: !state.editing });
     }
+    
     return state;
 }
 
