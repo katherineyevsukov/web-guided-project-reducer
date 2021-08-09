@@ -6,21 +6,21 @@ import { addAction, subtractAction, clearAction, addToMemoryAction} from './acti
 let currentState = initialState;
 
 
-console.log("currentState: ", currentState);
-currentState = reducer(currentState, addAction(-5));
-console.log("currentState: ", currentState);
+// console.log("currentState: ", currentState);
+// currentState = reducer(currentState, addAction(-5));
+// console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, addAction(43));
-console.log("currentState: ", currentState);
+// currentState = reducer(currentState, addAction(43));
+// console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, subtractAction(234));
-console.log("currentState: ", currentState);
+// currentState = reducer(currentState, subtractAction(234));
+// console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, addToMemoryAction());
-console.log("currentState: ", currentState);
+// currentState = reducer(currentState, addToMemoryAction());
+// console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, clearAction());
-console.log("currentState: ", currentState);
+// currentState = reducer(currentState, clearAction());
+// console.log("currentState: ", currentState);
 
 export default function App() {
   return (
