@@ -24,9 +24,9 @@ let currentState = initialState;
 
 export default function App() {
   const [ state, dispatch ] = useReducer(reducer, initialState);
-  
+
   const handleAddClick = () =>{
-    state = reducer(state, addAction(5));
+    dispatch(addAction(5));
   }
 
   return (
