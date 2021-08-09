@@ -20,8 +20,6 @@ const Title = () => {
     // setEditing(false);
   }
 
-  console.log(state);
-
   return (
     <div>
       {!state.editing ? (

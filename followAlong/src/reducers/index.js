@@ -1,6 +1,6 @@
 export const initialState = {
     title: 'Hello earthlings!',
-    editing: false,
+    editing: true,
     newTitleText: ''
 }
 
