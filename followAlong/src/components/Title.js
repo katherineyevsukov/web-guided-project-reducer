@@ -9,6 +9,8 @@ const Title = () => {
     setNewTitleText(e.target.value);
   };
 
+  
+
   return (
     <div>
       {!editing ? (
