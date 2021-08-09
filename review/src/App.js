@@ -12,6 +12,11 @@ const subtractAction = (input) => {
   return ({type:"SUBTRACT", payload:input})
 }
 
+const addToMemoryAction = (input) => {
+  return ({type:"ADD_TO_MEMORY", payload:input})
+}
+
+
 const clearAction = () => {
   return ({type:"CLEAR"})
 }
@@ -24,13 +29,13 @@ console.log("currentState: ", currentState);
 currentState = reducer(currentState, addAction(500000));
 console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, {type:"SUBTRACT", payload:2});
+currentState = reducer(currentState, subtractAction(234));
 console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, {type:"ADD_TO_MEMORY"});
+currentState = reducer(currentState, addToMemoryAction());
 console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, {type:"CLEAR"});
+currentState = reducer(currentState, clearAction());
 console.log("currentState: ", currentState);
 
 export default function App() {
