@@ -1,6 +1,7 @@
 import React, { useReducer } from "react";
-import reducer from './reducers/calcReducer';
+import reducer, { initialState} from './reducers/calcReducer';
 import "./styles.css";
+
 
 
 export default function App() {
