@@ -34,7 +34,7 @@ export default function App() {
   }
 
   const handleClearClick = () => {
-    dispatch(clearAction());
+    dispatch({type:"CLEAR"});
   }
 
   return (
