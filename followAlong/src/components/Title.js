@@ -8,12 +8,19 @@ const Title = () => {
   const [state, dispatch ] = useReducer(reducer, initialState);
 
   const handleChanges = e => {
-    setNewTitleText(e.target.value);
+    // setNewTitleText(e.target.value);
   };
 
   const handleEditing = ()=> {
-    setEditing(!editing)
+    // setEditing(!editing)
   }
+
+  const handleFormInput = ()=> {
+    // setTitle(newTitleText);
+    // setEditing(false);
+  }
+
+  console.log(state);
 
   return (
     <div>
@@ -32,10 +39,7 @@ const Title = () => {
             onChange={handleChanges}
           />
           <button
-            onClick={() => {
-              setTitle(newTitleText);
-              setEditing(false);
-            }}
+            onClick={handleFormInput}
           >
             Update title
           </button>
