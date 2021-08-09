@@ -4,16 +4,16 @@ import "./styles.css";
 
 let currentState = initialState;
 
-const addAction = () => {
-  return ({type:"ADD", payload:5})
+const addAction = (input) => {
+  return ({type:"ADD", payload:input})
 }
 
 
 console.log("currentState: ", currentState);
-currentState = reducer(currentState, addAction());
+currentState = reducer(currentState, addAction(5));
 console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, addAction());
+currentState = reducer(currentState, addAction(500000));
 console.log("currentState: ", currentState);
 
 currentState = reducer(currentState, {type:"SUBTRACT", payload:2});
