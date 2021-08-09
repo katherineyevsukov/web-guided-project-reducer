@@ -22,10 +22,10 @@ const Title = () => {
   const handleFormInput = ()=> {
     // setTitle(newTitleText);
     // setEditing(false);
-    dispatch();
+    // dispatch();
   }
 
-  console.log(state.newTitleText);
+  console.log(state);
 
   return (
     <div>
