@@ -3,11 +3,17 @@ import reducer, { initialState} from './reducers/calcReducer';
 import "./styles.css";
 
 let currentState = initialState;
+
+const addAction = () => {
+  return ({type:"ADD", payload:5})
+}
+
+
 console.log("currentState: ", currentState);
-currentState = reducer(currentState, {type:"ADD", payload:5});
+currentState = reducer(currentState, addAction());
 console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, {type:"ADD", payload:12313});
+currentState = reducer(currentState, addAction());
 console.log("currentState: ", currentState);
 
 currentState = reducer(currentState, {type:"SUBTRACT", payload:2});
