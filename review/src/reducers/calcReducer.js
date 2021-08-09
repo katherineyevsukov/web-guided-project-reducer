@@ -1,4 +1,4 @@
-import { ADD_ACTION, SUBTRACT_ACTION, CLEAR_ACTION, ADD_TO_MEMORY} from './../actions/calcAction';
+import { ADD_ACTION, SUBTRACT_ACTION, CLEAR_ACTION, ADD_TO_MEMORY } from './../actions/calcAction';
 export const initialState = {
   currentValue: 0,
   memory: 0
