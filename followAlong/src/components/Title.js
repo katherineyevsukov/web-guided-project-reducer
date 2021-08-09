@@ -25,7 +25,7 @@ const Title = () => {
     dispatch(saveInput());
   }
 
-  console.log(state.newTitleText);
+  console.log(state);
 
   return (
     <div>
