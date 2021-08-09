@@ -1,5 +1,5 @@
 export const addAction = (input) => {
-    return ({type:"ADDITION", payload:input})
+    return ({type:"ADD", payload:input})
   }
   
 export const subtractAction = (input) => {
