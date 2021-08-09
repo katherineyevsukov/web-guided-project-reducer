@@ -13,6 +13,7 @@ const Title = () => {
 
   const handleEditing = ()=> {
     // setEditing(!editing)
+    dispatch();
   }
 
   const handleFormInput = ()=> {
