@@ -25,7 +25,7 @@ const Title = () => {
     // dispatch();
   }
 
-  console.log(state);
+  console.log(state.newTitleText);
 
   return (
     <div>

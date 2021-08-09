@@ -6,8 +6,8 @@ export const toggleEdit = ()=> {
     return({type:TOGGLE_EDIT})
 }
 
-export const setTitleText = ()=> {
-    return({type:SET_TITLE_TEXT})
+export const setTitleText = (input)=> {
+    return({type:SET_TITLE_TEXT, payload:input})
 }
 
 export const saveInput = () => {
