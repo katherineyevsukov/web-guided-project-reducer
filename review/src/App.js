@@ -29,6 +29,14 @@ export default function App() {
     dispatch(addAction(5));
   }
 
+  const handleSubtractClick = () => {
+    dispatch(subtractAction(2));
+  }
+
+  const handleClearClick = () => {
+    dispatch(clearAction());
+  }
+
   return (
     <div className="App">
       <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
@@ -36,10 +44,10 @@ export default function App() {
       <button onClick={handleAddClick}type="button" className="btn">
         +5
       </button>
-      <button type="button" className="btn">
+      <button onClick={handleSubtractClick}type="button" className="btn">
         -2
       </button>
-      <button type="button" className="btn">
+      <button onClick={handleClearClick} type="button" className="btn">
         CE
       </button>
     </div>
