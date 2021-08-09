@@ -5,7 +5,7 @@ export const CLEAR_ACTION = "CLEAR_ACTION";
 
 export const addAction = (input) => {
     return ({type:ADD_ACTION, payload:input})
-  }
+}
   
 export const subtractAction = (input) => {
     return ({type:SUBTRACT_ACTION, payload:input})
