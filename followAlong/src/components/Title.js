@@ -11,12 +11,16 @@ const Title = () => {
     setNewTitleText(e.target.value);
   };
 
+  const handleEditing = ()=> {
+    setEditing(!editing)
+  }
+
   return (
     <div>
       {!editing ? (
         <h1>
           {title}{' '}
-          <i onClick={() => setEditing(!editing)} className="far fa-edit" />
+          <i onClick={handleEditing} className="far fa-edit" />
         </h1>
       ) : (
         <div>
