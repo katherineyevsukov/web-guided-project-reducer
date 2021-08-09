@@ -7,6 +7,11 @@ export const initialState = {
 }
 
 const reducer = (state, action) => {
+    switch(action.type) {
+        case(TOGGLE_EDIT):
+            return({ ...state, editing: !state.editing });
+    }
+
     if(action.type === TOGGLE_EDIT) {
         return({ ...state, editing: !state.editing });
     } else if (action.type === SET_TITLE_TEXT) {
