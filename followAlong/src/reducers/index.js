@@ -1,7 +1,9 @@
-const initialState = {
-
+export const initialState = {
+    title: 'Hello earthlings!',
+    editing: false,
+    newTitleText: ''
 }
 
-const reducer = (state, action) => {
+export const reducer = (state, action) => {
 
 }
