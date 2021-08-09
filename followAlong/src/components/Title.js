@@ -24,7 +24,7 @@ const Title = () => {
     // setEditing(false);
   }
 
-  console.log(state);
+  console.log(state.newTitleText);
 
   return (
     <div>
