@@ -8,6 +8,14 @@ const addAction = (input) => {
   return ({type:"ADD", payload:input})
 }
 
+const subtractAction = (input) => {
+  return ({type:"SUBTRACT", payload:input})
+}
+
+const clearAction = () => {
+  return ({type:"CLEAR"})
+}
+
 
 console.log("currentState: ", currentState);
 currentState = reducer(currentState, addAction(5));
