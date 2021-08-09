@@ -23,10 +23,10 @@ const clearAction = () => {
 
 
 console.log("currentState: ", currentState);
-currentState = reducer(currentState, addAction(5));
+currentState = reducer(currentState, addAction(-5));
 console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, addAction(500000));
+currentState = reducer(currentState, addAction(43));
 console.log("currentState: ", currentState);
 
 currentState = reducer(currentState, subtractAction(234));
