@@ -11,6 +11,7 @@ const Title = () => {
 
   const handleChanges = e => {
     // setNewTitleText(e.target.value);
+    dispatch({type:""});
   };
 
   const handleEditing = ()=> {
