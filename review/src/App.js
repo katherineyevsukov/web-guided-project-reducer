@@ -24,12 +24,15 @@ let currentState = initialState;
 
 export default function App() {
   const [ state, dispatch ] = useReducer(reducer, initialState);
+  const handleAddClick = () =>{
+    console.log("add?");
+  }
 
   return (
     <div className="App">
       <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
       <br />
-      <button type="button" className="btn">
+      <button onClick={handleAddClick}type="button" className="btn">
         +5
       </button>
       <button type="button" className="btn">
