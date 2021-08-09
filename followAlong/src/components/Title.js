@@ -1,7 +1,7 @@
 import React, { useState, useReducer } from 'react';
 import reducer, { initialState} from './../reducers';
 
-import { toggleEdit,  } from './../actions';
+import { toggleEdit, setTitleText } from './../actions';
 
 const Title = () => {
   // const [title, setTitle] = useState('Hello earthlings!');
@@ -11,7 +11,7 @@ const Title = () => {
 
   const handleChanges = e => {
     // setNewTitleText(e.target.value);
-    dispatch({type:"SET_TITLE_TEXT", payload:e.target.value});
+    dispatch(setTitleText(e.target.value));
   };
 
   const handleEditing = ()=> {
